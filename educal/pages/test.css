@@ -1,0 +1,130 @@
+.student-testimonials-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 20px 60px 20px;
+    background: #fff;
+  }
+  
+  .student-testimonials-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .student-testimonials-label {
+    display: inline-block;
+    padding: 4px 18px;
+    border: 1px solid #22223b;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    color: #22223b;
+    background: #fff;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .student-testimonials-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 18px 0 10px 0;
+    color: #22223b;
+  }
+  
+  .student-testimonials-subtitle {
+    color: #888;
+    font-size: 1.05rem;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .student-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .student-testimonial-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(34,34,59,0.07);
+    padding: 32px 26px 38px 26px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    border-bottom: 3px solid #3f51b5;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  
+  .student-testimonial-card:hover {
+    box-shadow: 0 8px 32px rgba(63,81,181,0.13);
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  .student-stars {
+    color: #ff9800;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .student-testimonial-text {
+    color: #22223b;
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+    flex: 1;
+  }
+  
+  .student-testimonial-profile {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .student-testimonial-profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 14px;
+    border: 2px solid #eee;
+  }
+  
+  .student-name {
+    font-weight: 700;
+    color: #22223b;
+    font-size: 1.05rem;
+  }
+  
+  .student-designation {
+    font-size: 0.95rem;
+    color: #888;
+  }
+  
+  .student-quote-icon {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .student-testimonials-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  }
+  @media (max-width: 600px) {
+    .student-testimonials-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .student-testimonial-card {
+      padding: 24px 12px 32px 12px;
+      min-height: 0;
+    }
+  }

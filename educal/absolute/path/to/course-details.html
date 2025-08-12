@@ -1,0 +1,21 @@
+// ... existing code ...
+<button class="know-details-btn">Know Details</button>
+// ... existing code ...
+<script>
+   // Show popup when clicking "Know Details" button
+   document.querySelector('.know-details-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.cartmini__area').classList.add('cartmini-opened');
+      document.querySelector('.body-overlay').classList.add('opened');
+   });
+
+   // Close popup when clicking close button or overlay
+   document.querySelector('.cartmini__close-btn').addEventListener('click', closePopup);
+   document.querySelector('.body-overlay').addEventListener('click', closePopup);
+
+   function closePopup() {
+      document.querySelector('.cartmini__area').classList.remove('cartmini-opened');
+      document.querySelector('.body-overlay').classList.remove('opened');
+   }
+</script>
+// ... existing code ...

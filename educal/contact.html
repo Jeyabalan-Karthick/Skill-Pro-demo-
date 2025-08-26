@@ -65,17 +65,17 @@
 
       <!-- header area start -->
       <header>
-        <div id="header-sticky" class="header__area header__transparent header__white header__padding">
+        <div id="header-sticky" class="header__area header__transparent header__padding">
            <div class="container">
               <div class="row align-items-center">
                  <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
                     <div class="header__left d-flex">
                        <div class="logo">
                           <a href="index-2.html">
-                             <!-- Default logo (blue) -->
+                             <!-- Default logo (white) -->
                              <img class="logo-white" src="assets/img/White.png" alt="logo" style="display:inline;">
-                             <!-- Logo for white bg (black) -->
-                             <img class="logo-black" src="assets/img/Blue.png" alt="logo" style="display:none;">
+                             <!-- Logo for white bg (blue) -->
+                             <img class="logo-blue" src="assets/img/Blue.png" alt="logo" style="display:none;">
                           </a>
                        </div>
                        <div class="header__category d-none d-lg-block">
@@ -153,9 +153,9 @@
         </div>
         <style>
           /* Show/hide logo based on header white class (when bg is white) */
+          .logo-blue { display: none; }
           .header__white .logo-white { display: none !important; }
-          .header__white .logo-black { display: inline !important; }
-          .logo-black { display: none; }
+          .header__white .logo-blue { display: inline !important; }
           /* Menu link color: white, hover blue */
           .main-menu-3 .menu-link {
             color: #fff !important;
@@ -303,9 +303,9 @@
           </button>
         </div>
         <div class="sidebar__content">
-          <div class="logo mb-40">
+           <div class="logo mb-40">
             <a href="index-2.html">
-              <img src="" alt="logo" />
+              <img src="assets/img/Blue.png" alt="logo" />
             </a>
           </div>
           <div class="mobile-menu fix"></div>
@@ -1114,24 +1114,24 @@
               </div>
             </div>
             <div class="footer__bottom">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xxl-12">
-                    <div class="footer__copyright text-center">
-                      <p>
-                        © 2025 SkillsPro, All Rights Reserved. Design By
-                        <a
-                          href="https://www.brandmindz.com/about-us.php"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Brand mindz
-                        </a>
-                      </p>
-                    </div>
-                  </div>
+           <div class="container">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="footer__copyright text-center">
+                  <p>
+                     Copyright © 2025 Skill Pro Made with ❤ by                    <a
+                      href="https://www.brandmindz.com/about-us.php"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Brand mindz
+                    </a>
+                    All rights reserved.  
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
             </div>
           </div>
         </footer>
